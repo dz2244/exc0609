@@ -16,9 +16,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn.findViewById(R.id.btn);
-        et.findViewById(R.id.et);
-        wv.findViewById(R.id.wv);
+        btn = findViewById(R.id.btn);
+        et = findViewById(R.id.et);
+        wv = findViewById(R.id.wv);
         wv.getSettings().setJavaScriptEnabled(true);
         wv.setWebViewClient(new MyWebViewClient());
     }
